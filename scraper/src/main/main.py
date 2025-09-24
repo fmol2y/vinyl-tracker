@@ -4,7 +4,7 @@ from sites import mascom
 def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Starting scraper...")
-    records = mascom.scrape()
+    records = mascom.scrape_vinyls()
     logging.info(f"Scraped {len(records)} records.")
 
     for record in records:
